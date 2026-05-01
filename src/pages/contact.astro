@@ -6,8 +6,8 @@ import '../styles/site.css';
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact | Howl at the Moon Dog Walks | Cranleigh, Surrey</title>
-  <meta name="description" content="Get in touch with Howl at the Moon Dog Walks. Call 07792 663847 or email art@howlatthemoondogwalking.co.uk. Dog walking in Cranleigh and Ewhurst, Surrey." />
+  <title>Contact Us | Howl at the Moon Dog Walking | Surrey</title>
+  <meta name="description" content="Get in touch with Howl at the Moon dog walking. Call Art on 07792 663847 or email art@howlatthemoondogwalking.co.uk. Based in Ewhurst, Surrey." />
   
 </head>
 <body>
@@ -16,18 +16,19 @@ import '../styles/site.css';
   <div style="background:white;color:#374151;padding:8px 16px;text-align:center;font-size:13px;position:sticky;top:0;z-index:50;border-bottom:1px solid #E5E7EB;box-shadow:0 1px 3px rgba(0,0,0,0.05)"><div style="max-width:56rem;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap"><span>Preview redesign for <strong style="color:#111827">Howl at the moon - Dog Walks</strong></span><a href="https://biscuitweb.co.uk/activate?id=P3473&amp;name=Howl%20at%20the%20moon%20-%20Dog%20Walks" style="display:inline-flex;align-items:center;padding:4px 14px;background:#111827;color:white;font-weight:700;font-size:11px;border-radius:9999px;text-decoration:none">Like it? Just £20/month</a></div></div>
 
   <!-- Header -->
-  <header class="sticky top-[41px] z-40 bg-[#1B2B23] shadow-md">
+  <header class="sticky top-[41px] z-40 bg-[var(--color-brand-accent)] shadow-lg">
     <div class="max-w-6xl mx-auto px-4 flex items-center justify-between h-16">
-      <a href="/P3473" class="font-display font-extrabold text-lg text-white leading-tight">
-        Howl at the Moon<br /><span class="text-mustard text-sm font-normal font-body">Dog Walks</span>
+      <a href="/P3473" class="flex items-center gap-3">
+        <img src="/P3473/images/logo-20final-201k.png" alt="Howl at the Moon logo" width="40" height="40" class="rounded-full" />
+        <span class="font-display font-extrabold text-white text-base leading-tight">Howl at the Moon<br /><span class="text-blue-200 text-xs font-normal font-body">Dog Walking</span></span>
       </a>
       <!-- Desktop Nav -->
       <nav class="hidden md:flex items-center gap-6">
-        <a href="/P3473" class="text-white/80 hover:text-mustard font-semibold text-sm transition-colors">Home</a>
-        <a href="/P3473/services" class="text-white/80 hover:text-mustard font-semibold text-sm transition-colors">Services</a>
-        <a href="/P3473/gallery" class="text-white/80 hover:text-mustard font-semibold text-sm transition-colors">Gallery</a>
-        <a href="/P3473/contact" class="text-mustard font-semibold text-sm">Contact</a>
-        <a href="/P3473/contact" class="bg-mustard text-white text-sm font-bold px-5 py-2 rounded-full hover:opacity-90 transition-opacity">Book a Walk</a>
+        <a href="/P3473" class="text-white/80 hover:text-white font-semibold text-sm transition-colors">Home</a>
+        <a href="/P3473/services" class="text-white/80 hover:text-white font-semibold text-sm transition-colors">Services</a>
+        <a href="/P3473/testimonials" class="text-white/80 hover:text-white font-semibold text-sm transition-colors">Testimonials</a>
+        <a href="/P3473/contact" class="text-white font-bold text-sm border-b-2 border-white pb-0.5">Contact</a>
+        <a href="/P3473/contact" class="bg-white text-[var(--color-brand-accent)] text-sm font-bold px-5 py-2 rounded-full hover:bg-blue-50 transition-colors">Book a Walk</a>
       </nav>
       <!-- Hamburger -->
       <button id="menu-toggle" class="md:hidden text-white p-2" aria-label="Open menu">
@@ -35,82 +36,89 @@ import '../styles/site.css';
       </button>
     </div>
     <!-- Mobile Menu -->
-    <div id="mobile-menu" class="hidden md:hidden bg-[#1B2B23] border-t border-white/10">
+    <div id="mobile-menu" class="hidden md:hidden bg-[var(--color-brand-accent-deep)] border-t border-white/10">
       <nav class="flex flex-col px-4 py-3">
         <a href="/P3473" class="text-white/80 py-3 border-b border-white/10">Home</a>
         <a href="/P3473/services" class="text-white/80 py-3 border-b border-white/10">Services</a>
-        <a href="/P3473/gallery" class="text-white/80 py-3 border-b border-white/10">Gallery</a>
-        <a href="/P3473/contact" class="text-mustard font-semibold py-3 border-b border-white/10">Contact</a>
-        <a href="/P3473/contact" class="text-mustard font-bold py-3">Book a Walk</a>
+        <a href="/P3473/testimonials" class="text-white/80 py-3 border-b border-white/10">Testimonials</a>
+        <a href="/P3473/contact" class="text-white font-bold py-3 border-b border-white/10">Contact</a>
+        <a href="/P3473/contact" class="text-white font-bold py-3">Book a Walk</a>
       </nav>
     </div>
   </header>
 
-  <!-- Page Header -->
-  <section class="py-16" style="background-color:#1B2B23">
-    <div class="max-w-6xl mx-auto px-4 text-center">
-      <h1 class="text-5xl text-white mb-4">Get in Touch</h1>
-      <p class="text-white/70 max-w-lg mx-auto leading-relaxed">Ready to book a walk, or just want to find out more? We would love to hear from you. We cover Cranleigh and Ewhurst, Surrey.</p>
+  <!-- Hero -->
+  <section class="bg-[var(--color-brand-accent)] py-20">
+    <div class="max-w-6xl mx-auto px-4">
+      <h1 class="text-5xl text-white mb-4">Contact Us</h1>
+      <p class="text-blue-200 text-lg max-w-xl leading-relaxed">Should you be interested in using our services or have any questions, please feel free to contact Art. We would love to hear from you and your four-legged friend.</p>
     </div>
   </section>
 
   <!-- Contact Section -->
-  <section class="py-20 bg-brand-bg">
+  <section class="py-20 bg-[var(--color-brand-bg)]">
     <div class="max-w-5xl mx-auto px-4">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
 
         <!-- Contact Info -->
         <div>
-          <h2 class="text-3xl text-ink mb-6">Contact Details</h2>
-          <div class="flex flex-col gap-6">
+          <h2 class="text-3xl text-[var(--color-ink)] mb-6">Get in Touch</h2>
+          <p class="text-[var(--color-ink-soft)] leading-relaxed mb-6">
+            We are a family duo, Art and Mandy, offering dog walking, hikes, puppy visits and house sitting in the Cranleigh, Ewhurst and Bramley areas of Surrey.
+          </p>
+          <div class="flex flex-col gap-5 mb-8">
             <div class="flex items-start gap-4">
-              <div class="w-10 h-10 rounded-full bg-mustard/10 flex items-center justify-center flex-shrink-0 mt-0.5">
-                <span class="text-mustard text-lg">📞</span>
+              <div class="w-11 h-11 rounded-xl bg-[var(--color-accent-light)] flex items-center justify-center flex-shrink-0">
+                <span class="text-[var(--color-brand-accent)] text-xl">📞</span>
               </div>
               <div>
-                <div class="font-semibold text-ink text-sm mb-1">Phone</div>
-                <a href="tel:07792663847" class="text-mustard font-bold text-lg hover:underline">07792 663847</a>
+                <div class="font-semibold text-[var(--color-ink)] text-sm mb-0.5">Phone</div>
+                <a href="tel:07792663847" class="text-[var(--color-brand-accent)] font-bold text-lg hover:underline">07792 663847</a>
               </div>
             </div>
             <div class="flex items-start gap-4">
-              <div class="w-10 h-10 rounded-full bg-mustard/10 flex items-center justify-center flex-shrink-0 mt-0.5">
-                <span class="text-mustard text-lg">✉️</span>
+              <div class="w-11 h-11 rounded-xl bg-[var(--color-accent-light)] flex items-center justify-center flex-shrink-0">
+                <span class="text-[var(--color-brand-accent)] text-xl">✉️</span>
               </div>
               <div>
-                <div class="font-semibold text-ink text-sm mb-1">Email</div>
-                <a href="mailto:art@howlatthemoondogwalking.co.uk" class="text-mustard font-semibold hover:underline break-all">art@howlatthemoondogwalking.co.uk</a>
+                <div class="font-semibold text-[var(--color-ink)] text-sm mb-0.5">Email</div>
+                <a href="mailto:art@howlatthemoondogwalking.co.uk" class="text-[var(--color-brand-accent)] font-semibold hover:underline break-all">art@howlatthemoondogwalking.co.uk</a>
               </div>
             </div>
             <div class="flex items-start gap-4">
-              <div class="w-10 h-10 rounded-full bg-mustard/10 flex items-center justify-center flex-shrink-0 mt-0.5">
-                <span class="text-mustard text-lg">📍</span>
+              <div class="w-11 h-11 rounded-xl bg-[var(--color-accent-light)] flex items-center justify-center flex-shrink-0">
+                <span class="text-[var(--color-brand-accent)] text-xl">📍</span>
               </div>
               <div>
-                <div class="font-semibold text-ink text-sm mb-1">Location</div>
-                <div class="text-ink-soft">Cranleigh, Surrey, GU6 8AA</div>
-                <div class="text-ink-soft text-sm mt-1">Serving Cranleigh and Ewhurst</div>
+                <div class="font-semibold text-[var(--color-ink)] text-sm mb-0.5">Address</div>
+                <address class="text-[var(--color-ink-soft)] not-italic text-sm">
+                  10 Rectory Close<br />
+                  Ewhurst<br />
+                  Surrey GU6 7PU
+                </address>
               </div>
             </div>
             <div class="flex items-start gap-4">
-              <div class="w-10 h-10 rounded-full bg-mustard/10 flex items-center justify-center flex-shrink-0 mt-0.5">
-                <span class="text-mustard text-lg">★</span>
+              <div class="w-11 h-11 rounded-xl bg-[var(--color-accent-light)] flex items-center justify-center flex-shrink-0">
+                <span class="text-[var(--color-brand-accent)] text-xl">🗺️</span>
               </div>
               <div>
-                <div class="font-semibold text-ink text-sm mb-1">Reviews</div>
-                <div class="text-ink-soft">100% recommend &mdash; 14 Facebook reviews</div>
+                <div class="font-semibold text-[var(--color-ink)] text-sm mb-0.5">Areas Covered</div>
+                <p class="text-[var(--color-ink-soft)] text-sm">Cranleigh, Ewhurst and Bramley, Surrey</p>
               </div>
             </div>
           </div>
 
           <!-- Photo -->
-          <div class="mt-8 aspect-[4/3] overflow-hidden rounded-2xl">
-            <img src="/P3473/images/470035575-2347749412227073-2266513525879-2.jpg" alt="Dog walking in Surrey countryside" width="800" height="600" loading="lazy" class="w-full h-full object-cover" />
+          <div class="rounded-2xl overflow-hidden shadow-md">
+            <img src="/P3473/images/art-20with-20dogs.jpg" alt="Art with dogs on a walk" width="978" height="607" loading="lazy" class="w-full object-cover" />
           </div>
         </div>
 
         <!-- Contact Form -->
         <div class="bg-white rounded-2xl p-8 shadow-md relative">
-          <h2 class="text-2xl text-ink mb-6">Send Us a Message</h2>
+          <h2 class="text-2xl text-[var(--color-ink)] mb-2">Send Us a Message</h2>
+          <p class="text-[var(--color-ink-soft)] text-sm mb-6">Alternatively, please use the form below and we will get back to you as soon as possible.</p>
           <form action="/api/contact" method="POST">
             <input type="hidden" name="_site_id" value="P3473" />
             <input type="hidden" name="_business_name" value="Howl at the moon - Dog Walks" />
@@ -119,32 +127,33 @@ import '../styles/site.css';
 
             <div class="flex flex-col gap-4">
               <div>
-                <label class="block text-ink text-sm font-semibold mb-1" for="name">Your Name</label>
-                <input type="text" id="name" name="name" required placeholder="Jane Smith" class="w-full border border-border rounded-lg px-4 py-2.5 text-ink text-sm focus:outline-none focus:border-mustard transition-colors" />
+                <label class="block text-[var(--color-ink)] text-sm font-semibold mb-1" for="name">Your Name</label>
+                <input type="text" id="name" name="name" required placeholder="Jane Smith" class="w-full border border-[var(--color-border)] rounded-lg px-4 py-2.5 text-[var(--color-ink)] text-sm focus:outline-none focus:border-[var(--color-brand-accent)] transition-colors" />
               </div>
               <div>
-                <label class="block text-ink text-sm font-semibold mb-1" for="email">Email Address</label>
-                <input type="email" id="email" name="email" required placeholder="jane@example.com" class="w-full border border-border rounded-lg px-4 py-2.5 text-ink text-sm focus:outline-none focus:border-mustard transition-colors" />
+                <label class="block text-[var(--color-ink)] text-sm font-semibold mb-1" for="email">Email Address</label>
+                <input type="email" id="email" name="email" required placeholder="jane@example.com" class="w-full border border-[var(--color-border)] rounded-lg px-4 py-2.5 text-[var(--color-ink)] text-sm focus:outline-none focus:border-[var(--color-brand-accent)] transition-colors" />
               </div>
               <div>
-                <label class="block text-ink text-sm font-semibold mb-1" for="phone">Phone Number</label>
-                <input type="tel" id="phone" name="phone" placeholder="07700 000000" class="w-full border border-border rounded-lg px-4 py-2.5 text-ink text-sm focus:outline-none focus:border-mustard transition-colors" />
+                <label class="block text-[var(--color-ink)] text-sm font-semibold mb-1" for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="07700 000000" class="w-full border border-[var(--color-border)] rounded-lg px-4 py-2.5 text-[var(--color-ink)] text-sm focus:outline-none focus:border-[var(--color-brand-accent)] transition-colors" />
               </div>
               <div>
-                <label class="block text-ink text-sm font-semibold mb-1" for="service">Service Required</label>
-                <select id="service" name="service" class="w-full border border-border rounded-lg px-4 py-2.5 text-ink text-sm focus:outline-none focus:border-mustard transition-colors bg-white">
+                <label class="block text-[var(--color-ink)] text-sm font-semibold mb-1" for="service">Service Required</label>
+                <select id="service" name="service" class="w-full border border-[var(--color-border)] rounded-lg px-4 py-2.5 text-[var(--color-ink)] text-sm focus:outline-none focus:border-[var(--color-brand-accent)] transition-colors bg-white">
                   <option value="">Please select&hellip;</option>
-                  <option value="Group Walks">Group Walks</option>
-                  <option value="Puppy Walks">Puppy Walks</option>
-                  <option value="Flexible Canine Services">Flexible Canine Services</option>
+                  <option value="Dog Walks">Dog Walks &mdash; 1 hour, £15/dog</option>
+                  <option value="Hikes">Hikes &mdash; 3 hours, £30/dog</option>
+                  <option value="Puppy Visits">Puppy Visits &mdash; £8/20 min</option>
+                  <option value="House Sitting">House Sitting &mdash; from £40/night</option>
                   <option value="Not sure">Not sure &mdash; happy to discuss</option>
                 </select>
               </div>
               <div>
-                <label class="block text-ink text-sm font-semibold mb-1" for="message">Message</label>
-                <textarea id="message" name="message" rows="4" required placeholder="Tell us about your dog and what you're looking for..." class="w-full border border-border rounded-lg px-4 py-2.5 text-ink text-sm focus:outline-none focus:border-mustard transition-colors resize-none"></textarea>
+                <label class="block text-[var(--color-ink)] text-sm font-semibold mb-1" for="message">Message</label>
+                <textarea id="message" name="message" rows="4" required placeholder="Tell us about your dog and what you are looking for..." class="w-full border border-[var(--color-border)] rounded-lg px-4 py-2.5 text-[var(--color-ink)] text-sm focus:outline-none focus:border-[var(--color-brand-accent)] transition-colors resize-none"></textarea>
               </div>
-              <button type="submit" class="w-full bg-mustard text-white font-bold py-3 rounded-full hover:opacity-90 transition-opacity">Send Message</button>
+              <button type="submit" class="w-full bg-[var(--color-brand-accent)] text-white font-bold py-3 rounded-full hover:bg-[var(--color-brand-accent-deep)] transition-colors">Send Message</button>
             </div>
           </form>
         </div>
@@ -154,42 +163,46 @@ import '../styles/site.css';
   </section>
 
   <!-- Footer -->
-  <footer class="bg-[#0F1A12] text-white/60 py-12">
+  <footer class="bg-[var(--color-ink)] text-white/60 py-12">
     <div class="max-w-6xl mx-auto px-4">
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mb-10">
         <div>
-          <div class="font-display font-extrabold text-white text-lg mb-2">Howl at the Moon</div>
-          <div class="text-mustard text-sm mb-3">Dog Walks</div>
-          <p class="text-sm leading-relaxed">Friendly and reliable canine services in Cranleigh &amp; Ewhurst, Surrey.</p>
+          <div class="flex items-center gap-2 mb-3">
+            <img src="/P3473/images/logo-20final-201k.png" alt="Howl at the Moon logo" width="36" height="36" class="rounded-full" />
+            <div class="font-display font-extrabold text-white text-base">Howl at the Moon</div>
+          </div>
+          <p class="text-sm leading-relaxed">Family-run dog walking in Cranleigh, Ewhurst and Bramley, Surrey. Art and Mandy.</p>
         </div>
         <div>
           <div class="font-semibold text-white text-sm mb-3 uppercase tracking-wide">Pages</div>
           <ul class="flex flex-col gap-2 text-sm">
-            <li><a href="/P3473" class="hover:text-mustard transition-colors">Home</a></li>
-            <li><a href="/P3473/services" class="hover:text-mustard transition-colors">Services</a></li>
-            <li><a href="/P3473/gallery" class="hover:text-mustard transition-colors">Gallery</a></li>
-            <li><a href="/P3473/contact" class="hover:text-mustard transition-colors">Contact</a></li>
+            <li><a href="/P3473" class="hover:text-white transition-colors">Home</a></li>
+            <li><a href="/P3473/services" class="hover:text-white transition-colors">Services &amp; Prices</a></li>
+            <li><a href="/P3473/testimonials" class="hover:text-white transition-colors">Testimonials</a></li>
+            <li><a href="/P3473/contact" class="hover:text-white transition-colors">Contact Us</a></li>
           </ul>
         </div>
         <div>
           <div class="font-semibold text-white text-sm mb-3 uppercase tracking-wide">Services</div>
           <ul class="flex flex-col gap-2 text-sm">
-            <li><a href="/P3473/services" class="hover:text-mustard transition-colors">Group Walks</a></li>
-            <li><a href="/P3473/services" class="hover:text-mustard transition-colors">Puppy Walks</a></li>
-            <li><a href="/P3473/services" class="hover:text-mustard transition-colors">Flexible Canine Services</a></li>
+            <li><a href="/P3473/services" class="hover:text-white transition-colors">Dog Walks &mdash; £15/dog</a></li>
+            <li><a href="/P3473/services" class="hover:text-white transition-colors">Hikes &mdash; £30/dog</a></li>
+            <li><a href="/P3473/services" class="hover:text-white transition-colors">Puppy Visits &mdash; £8/20min</a></li>
+            <li><a href="/P3473/services" class="hover:text-white transition-colors">House Sitting &mdash; from £40/night</a></li>
           </ul>
         </div>
         <div>
           <div class="font-semibold text-white text-sm mb-3 uppercase tracking-wide">Contact</div>
           <ul class="flex flex-col gap-2 text-sm">
-            <li><a href="tel:07792663847" class="hover:text-mustard transition-colors">07792 663847</a></li>
-            <li><a href="mailto:art@howlatthemoondogwalking.co.uk" class="hover:text-mustard transition-colors break-all">art@howlatthemoondogwalking.co.uk</a></li>
-            <li class="text-white/50">Cranleigh, Surrey, GU6 8AA</li>
+            <li><a href="tel:07792663847" class="hover:text-white transition-colors">07792 663847</a></li>
+            <li><a href="mailto:art@howlatthemoondogwalking.co.uk" class="hover:text-white transition-colors break-all">art@howlatthemoondogwalking.co.uk</a></li>
+            <li class="text-white/40">10 Rectory Close, Ewhurst</li>
+            <li class="text-white/40">Surrey GU6 7PU</li>
           </ul>
         </div>
       </div>
       <div class="border-t border-white/10 pt-6 text-center text-xs text-white/40">
-        &copy; 2026 Howl at the Moon Dog Walks, Cranleigh, Surrey, GU6 8AA. All rights reserved.
+        &copy; 2026 Howl at the Moon Dog Walking. 10 Rectory Close, Ewhurst, Surrey GU6 7PU. All rights reserved.
       </div>
     </div>
   </footer>

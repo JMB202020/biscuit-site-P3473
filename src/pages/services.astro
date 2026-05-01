@@ -6,8 +6,8 @@ import '../styles/site.css';
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Our Services | Howl at the Moon Dog Walks | Cranleigh, Surrey</title>
-  <meta name="description" content="Group walks, puppy walks and flexible canine services in Cranleigh and Ewhurst, Surrey. Call 07792 663847." />
+  <title>Services &amp; Prices | Howl at the Moon Dog Walking | Surrey</title>
+  <meta name="description" content="Dog walks £15, hikes £30, puppy visits £8/20 min, house sitting from £40/night. Professional dog walking in Cranleigh, Ewhurst and Bramley. Call 07792 663847." />
   
 </head>
 <body>
@@ -16,18 +16,19 @@ import '../styles/site.css';
   <div style="background:white;color:#374151;padding:8px 16px;text-align:center;font-size:13px;position:sticky;top:0;z-index:50;border-bottom:1px solid #E5E7EB;box-shadow:0 1px 3px rgba(0,0,0,0.05)"><div style="max-width:56rem;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap"><span>Preview redesign for <strong style="color:#111827">Howl at the moon - Dog Walks</strong></span><a href="https://biscuitweb.co.uk/activate?id=P3473&amp;name=Howl%20at%20the%20moon%20-%20Dog%20Walks" style="display:inline-flex;align-items:center;padding:4px 14px;background:#111827;color:white;font-weight:700;font-size:11px;border-radius:9999px;text-decoration:none">Like it? Just £20/month</a></div></div>
 
   <!-- Header -->
-  <header class="sticky top-[41px] z-40 bg-[#1B2B23] shadow-md">
+  <header class="sticky top-[41px] z-40 bg-[var(--color-brand-accent)] shadow-lg">
     <div class="max-w-6xl mx-auto px-4 flex items-center justify-between h-16">
-      <a href="/P3473" class="font-display font-extrabold text-lg text-white leading-tight">
-        Howl at the Moon<br /><span class="text-mustard text-sm font-normal font-body">Dog Walks</span>
+      <a href="/P3473" class="flex items-center gap-3">
+        <img src="/P3473/images/logo-20final-201k.png" alt="Howl at the Moon logo" width="40" height="40" class="rounded-full" />
+        <span class="font-display font-extrabold text-white text-base leading-tight">Howl at the Moon<br /><span class="text-blue-200 text-xs font-normal font-body">Dog Walking</span></span>
       </a>
       <!-- Desktop Nav -->
       <nav class="hidden md:flex items-center gap-6">
-        <a href="/P3473" class="text-white/80 hover:text-mustard font-semibold text-sm transition-colors">Home</a>
-        <a href="/P3473/services" class="text-mustard font-semibold text-sm">Services</a>
-        <a href="/P3473/gallery" class="text-white/80 hover:text-mustard font-semibold text-sm transition-colors">Gallery</a>
-        <a href="/P3473/contact" class="text-white/80 hover:text-mustard font-semibold text-sm transition-colors">Contact</a>
-        <a href="/P3473/contact" class="bg-mustard text-white text-sm font-bold px-5 py-2 rounded-full hover:opacity-90 transition-opacity">Book a Walk</a>
+        <a href="/P3473" class="text-white/80 hover:text-white font-semibold text-sm transition-colors">Home</a>
+        <a href="/P3473/services" class="text-white font-bold text-sm border-b-2 border-white pb-0.5">Services</a>
+        <a href="/P3473/testimonials" class="text-white/80 hover:text-white font-semibold text-sm transition-colors">Testimonials</a>
+        <a href="/P3473/contact" class="text-white/80 hover:text-white font-semibold text-sm transition-colors">Contact</a>
+        <a href="/P3473/contact" class="bg-white text-[var(--color-brand-accent)] text-sm font-bold px-5 py-2 rounded-full hover:bg-blue-50 transition-colors">Book a Walk</a>
       </nav>
       <!-- Hamburger -->
       <button id="menu-toggle" class="md:hidden text-white p-2" aria-label="Open menu">
@@ -35,150 +36,198 @@ import '../styles/site.css';
       </button>
     </div>
     <!-- Mobile Menu -->
-    <div id="mobile-menu" class="hidden md:hidden bg-[#1B2B23] border-t border-white/10">
+    <div id="mobile-menu" class="hidden md:hidden bg-[var(--color-brand-accent-deep)] border-t border-white/10">
       <nav class="flex flex-col px-4 py-3">
         <a href="/P3473" class="text-white/80 py-3 border-b border-white/10">Home</a>
-        <a href="/P3473/services" class="text-mustard font-semibold py-3 border-b border-white/10">Services</a>
-        <a href="/P3473/gallery" class="text-white/80 py-3 border-b border-white/10">Gallery</a>
+        <a href="/P3473/services" class="text-white font-bold py-3 border-b border-white/10">Services</a>
+        <a href="/P3473/testimonials" class="text-white/80 py-3 border-b border-white/10">Testimonials</a>
         <a href="/P3473/contact" class="text-white/80 py-3 border-b border-white/10">Contact</a>
-        <a href="/P3473/contact" class="text-mustard font-bold py-3">Book a Walk</a>
+        <a href="/P3473/contact" class="text-white font-bold py-3">Book a Walk</a>
       </nav>
     </div>
   </header>
 
-  <!-- Page Header -->
-  <section class="py-16" style="background-color:#1B2B23">
-    <div class="max-w-6xl mx-auto px-4 text-center">
-      <span class="inline-flex items-center gap-2 bg-white/10 text-white/70 px-3 py-1 rounded-full text-sm mb-4">📍 Cranleigh &amp; Ewhurst, Surrey</span>
-      <h1 class="text-5xl text-white mb-4">Our Services</h1>
-      <p class="text-white/70 max-w-xl mx-auto leading-relaxed">Flexible canine services tailored to your dog and your schedule. From group adventures to gentle puppy walks, we are here for all of your dog's needs.</p>
+  <!-- Hero -->
+  <section class="bg-[var(--color-brand-accent)] py-20">
+    <div class="max-w-6xl mx-auto px-4">
+      <span class="inline-flex items-center gap-2 bg-white/15 text-white/90 px-4 py-1.5 rounded-full text-sm mb-6">📍 Cranleigh, Ewhurst &amp; Bramley, Surrey</span>
+      <h1 class="text-5xl text-white mb-4">Services &amp; Prices</h1>
+      <p class="text-blue-200 text-lg max-w-xl leading-relaxed">Everything your dog needs, from daily group walks to overnight house sitting. Clear, honest pricing with no hidden extras.</p>
     </div>
   </section>
 
   <!-- Services Detail -->
-  <section class="py-20 bg-brand-bg">
-    <div class="max-w-6xl mx-auto px-4 flex flex-col gap-16">
+  <section class="py-20 bg-[var(--color-brand-bg)]">
+    <div class="max-w-6xl mx-auto px-4">
 
-      <!-- Group Walks -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-        <div class="aspect-[4/3] overflow-hidden rounded-2xl">
-          <img src="/P3473/images/677802236-1545221057611444-8321389836124.jpg" alt="Group dog walk in the Surrey countryside" width="800" height="600" loading="lazy" class="w-full h-full object-cover" />
-        </div>
+      <!-- Dog Walks -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center mb-16 pb-16 border-b border-[var(--color-border)]">
         <div>
-          <div class="text-mustard text-3xl mb-3">🐕</div>
-          <h2 class="text-3xl text-ink mb-4">Group Walks</h2>
-          <p class="text-ink-soft leading-relaxed mb-4">
-            Our group walks take small groups of dogs out into the beautiful countryside around Cranleigh and Ewhurst. Dogs have the chance to run, explore and socialise with other friendly dogs in a safe and supervised environment.
+          <div class="inline-flex items-center gap-2 bg-[var(--color-accent-light)] text-[var(--color-brand-accent)] px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wide mb-4">Most Popular</div>
+          <h2 class="text-3xl text-[var(--color-ink)] mb-2">Dog Walks</h2>
+          <div class="text-[var(--color-brand-accent)] font-bold text-2xl mb-4">£15 per dog</div>
+          <p class="text-[var(--color-ink-soft)] leading-relaxed mb-4">
+            Our group walks last 1 hour and are mostly carried out in the Surrey Hills. We walk in a group of dogs, so it is an excellent opportunity for socialising.
           </p>
-          <p class="text-ink-soft leading-relaxed mb-6">
-            Group walks are a great way for your dog to burn off energy, build confidence and enjoy the outdoors. We keep group sizes small so every dog gets the attention they deserve.
+          <p class="text-[var(--color-ink-soft)] leading-relaxed mb-4">
+            We always aim to walk for the complete hour. On occasions where the weather is particularly inclement or we are delayed by unforeseen circumstances, we may reduce to 45 minutes. If this is the case, we will always do our best to let you know.
           </p>
-          <a href="/P3473/contact" class="inline-block bg-mustard text-white px-6 py-3 rounded-full font-bold hover:opacity-90 transition-opacity">Enquire About Group Walks</a>
+          <p class="text-[var(--color-ink-soft)] leading-relaxed">
+            We pick up and drop off to home in a comfortable, customised van and can arrange keys if you are not home.
+          </p>
+          <a href="/P3473/contact" class="mt-6 inline-block bg-[var(--color-brand-accent)] text-white px-7 py-3 rounded-full font-bold hover:bg-[var(--color-brand-accent-deep)] transition-colors">Book a Walk</a>
+        </div>
+        <div class="rounded-2xl overflow-hidden shadow-md">
+          <img src="/P3473/images/imag0558.jpg" alt="Dogs on a group walk in the Surrey Hills" width="980" height="517" loading="lazy" class="w-full object-cover" />
         </div>
       </div>
 
-      <!-- Puppy Walks -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-        <div class="order-2 md:order-1">
-          <div class="text-mustard text-3xl mb-3">🐾</div>
-          <h2 class="text-3xl text-ink mb-4">Puppy Walks</h2>
-          <p class="text-ink-soft leading-relaxed mb-4">
-            We offer shorter, more gentle walks specifically for puppies. Younger dogs have different needs, and we make sure every puppy gets to explore at their own pace in a calm and encouraging environment.
-          </p>
-          <p class="text-ink-soft leading-relaxed mb-6">
-            Many of our clients start with puppy walks and progress on to group walks as their dog grows in confidence. We love watching them develop and find their stride.
-          </p>
-          <a href="/P3473/contact" class="inline-block bg-mustard text-white px-6 py-3 rounded-full font-bold hover:opacity-90 transition-opacity">Enquire About Puppy Walks</a>
+      <!-- Hikes -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center mb-16 pb-16 border-b border-[var(--color-border)]">
+        <div class="order-2 md:order-1 grid grid-cols-2 gap-3">
+          <div class="aspect-square overflow-hidden rounded-xl">
+            <img src="/P3473/images/imag0152.jpg" alt="Dog hike in Surrey Hills" width="204" height="196" loading="lazy" class="w-full h-full object-cover" />
+          </div>
+          <div class="aspect-square overflow-hidden rounded-xl">
+            <img src="/P3473/images/imag0389.jpg" alt="Dogs on a hike" width="204" height="196" loading="lazy" class="w-full h-full object-cover" />
+          </div>
+          <div class="aspect-square overflow-hidden rounded-xl">
+            <img src="/P3473/images/imag0016.jpeg" alt="Dog on a long walk" width="204" height="196" loading="lazy" class="w-full h-full object-cover" />
+          </div>
+          <div class="aspect-square overflow-hidden rounded-xl">
+            <img src="/P3473/images/imag0604.jpg" alt="Dog enjoying a hike" width="204" height="196" loading="lazy" class="w-full h-full object-cover" />
+          </div>
         </div>
-        <div class="order-1 md:order-2 aspect-[4/3] overflow-hidden rounded-2xl">
-          <img src="/P3473/images/684569372-1551796400287243-3124562392047-3.jpg" alt="Puppy walk service" width="800" height="600" loading="lazy" class="w-full h-full object-cover" />
+        <div class="order-1 md:order-2">
+          <h2 class="text-3xl text-[var(--color-ink)] mb-2">Hikes</h2>
+          <div class="text-[var(--color-brand-accent)] font-bold text-2xl mb-4">£30 per dog</div>
+          <p class="text-[var(--color-ink-soft)] leading-relaxed mb-4">
+            3-hour hikes are offered on Friday afternoons for those dogs with extra energy to work off. Leave your pup in our hands and enjoy a relaxing end to your working week.
+          </p>
+          <p class="text-[var(--color-ink-soft)] leading-relaxed">
+            Our hikes take in the best of the beautiful Surrey Hills, with woodland trails and open grasslands far from roads. Perfect for dogs who love a proper adventure.
+          </p>
+          <a href="/P3473/contact" class="mt-6 inline-block bg-[var(--color-brand-accent)] text-white px-7 py-3 rounded-full font-bold hover:bg-[var(--color-brand-accent-deep)] transition-colors">Book a Hike</a>
         </div>
       </div>
 
-      <!-- Flexible Canine Services -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-        <div class="aspect-[4/3] overflow-hidden rounded-2xl">
-          <img src="/P3473/images/657824191-1520644373402446-2994353260382.jpg" alt="Flexible canine services in Surrey" width="800" height="600" loading="lazy" class="w-full h-full object-cover" />
-        </div>
+      <!-- Puppy Visits -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center mb-16 pb-16 border-b border-[var(--color-border)]">
         <div>
-          <div class="text-mustard text-3xl mb-3">🌿</div>
-          <h2 class="text-3xl text-ink mb-4">Flexible Canine Services</h2>
-          <p class="text-ink-soft leading-relaxed mb-4">
-            We understand that every dog and every owner is different. We offer a flexible service to fit around your schedule, your dog's energy levels and your specific requirements.
+          <h2 class="text-3xl text-[var(--color-ink)] mb-2">Puppy Visits</h2>
+          <div class="text-[var(--color-brand-accent)] font-bold text-2xl mb-4">£8 per 20-minute visit</div>
+          <p class="text-[var(--color-ink-soft)] leading-relaxed mb-4">
+            We can pop in to give your puppy a little company whilst you are out and about. Short, friendly visits to keep your young dog happy, stimulated and not lonely.
           </p>
-          <p class="text-ink-soft leading-relaxed mb-6">
-            Get in touch to talk through what you need and we will work out the best arrangement for you and your dog. We cover Cranleigh and Ewhurst, Surrey.
+          <p class="text-[var(--color-ink-soft)] leading-relaxed">
+            Puppy visits are a great way to introduce your dog to us before joining a group walk, and help build confidence in a calm, familiar setting.
           </p>
-          <a href="/P3473/contact" class="inline-block bg-mustard text-white px-6 py-3 rounded-full font-bold hover:opacity-90 transition-opacity">Get in Touch</a>
+          <a href="/P3473/contact" class="mt-6 inline-block bg-[var(--color-brand-accent)] text-white px-7 py-3 rounded-full font-bold hover:bg-[var(--color-brand-accent-deep)] transition-colors">Enquire About Puppy Visits</a>
+        </div>
+        <div class="grid grid-cols-2 gap-3">
+          <div class="aspect-square overflow-hidden rounded-xl">
+            <img src="/P3473/images/max-20and-20beau.jpg" alt="Max and Beau, French bulldogs" width="204" height="196" loading="lazy" class="w-full h-full object-cover" />
+          </div>
+          <div class="aspect-square overflow-hidden rounded-xl">
+            <img src="/P3473/images/paddy.jpg" alt="Paddy the dog" width="204" height="196" loading="lazy" class="w-full h-full object-cover" />
+          </div>
         </div>
       </div>
 
-    </div>
-  </section>
-
-  <!-- Coverage -->
-  <section class="py-16 bg-white">
-    <div class="max-w-4xl mx-auto px-4 text-center">
-      <h2 class="text-3xl text-ink mb-4">Areas We Cover</h2>
-      <p class="text-ink-soft leading-relaxed mb-8">We provide dog walking services across Cranleigh and Ewhurst in Surrey. If you are nearby and unsure whether we cover your area, just give us a call.</p>
-      <div class="flex flex-wrap justify-center gap-4">
-        <span class="bg-brand-bg text-ink px-5 py-2 rounded-full text-sm font-semibold">Cranleigh</span>
-        <span class="bg-brand-bg text-ink px-5 py-2 rounded-full text-sm font-semibold">Ewhurst</span>
-        <span class="bg-brand-bg text-ink-soft px-5 py-2 rounded-full text-sm">Surrounding areas &mdash; ask us</span>
+      <!-- House Sitting -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center mb-16 pb-16 border-b border-[var(--color-border)]">
+        <div class="order-2 md:order-1 grid grid-cols-2 gap-3">
+          <div class="aspect-square overflow-hidden rounded-xl">
+            <img src="/P3473/images/wembley-20and-20micky-203.jpg" alt="Wembley and Micky" width="204" height="196" loading="lazy" class="w-full h-full object-cover" />
+          </div>
+          <div class="aspect-square overflow-hidden rounded-xl">
+            <img src="/P3473/images/img-20161102-wa0003.jpg" alt="Dogs at home" width="204" height="196" loading="lazy" class="w-full h-full object-cover" />
+          </div>
+        </div>
+        <div class="order-1 md:order-2">
+          <h2 class="text-3xl text-[var(--color-ink)] mb-2">House Sitting</h2>
+          <div class="text-[var(--color-brand-accent)] font-bold text-2xl mb-4">From £40 per night (one dog)</div>
+          <p class="text-[var(--color-ink-soft)] leading-relaxed mb-4">
+            We offer a house sitting service to give you peace of mind while you are away. Your dogs get the benefit of having someone they know care for them in the environment they are used to.
+          </p>
+          <p class="text-[var(--color-ink-soft)] leading-relaxed">
+            This includes morning and afternoon walks. Where we are out walking other dogs, we fit them in as and when we can. The perfect solution for worry-free holidays.
+          </p>
+          <a href="/P3473/contact" class="mt-6 inline-block bg-[var(--color-brand-accent)] text-white px-7 py-3 rounded-full font-bold hover:bg-[var(--color-brand-accent-deep)] transition-colors">Enquire About House Sitting</a>
+        </div>
       </div>
+
+      <!-- Cancellations -->
+      <div class="bg-[var(--color-cream)] rounded-2xl p-8 border border-[var(--color-border)]">
+        <h2 class="text-2xl text-[var(--color-ink)] mb-4">Cancellation Policy</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-[var(--color-ink-soft)] text-sm leading-relaxed">
+          <div>
+            <h3 class="font-bold text-[var(--color-ink)] mb-2">If you need to cancel</h3>
+            <p>Please try to give us as much notice as possible. We ask for a minimum of 24 hours notice so we have the opportunity to fit other dogs in. We understand that on occasion you may not be able to give us such notice, and at these times we will discuss the reason for cancellation with you. A cancellation fee may still apply. Illness is exempt from a cancellation fee.</p>
+          </div>
+          <div>
+            <h3 class="font-bold text-[var(--color-ink)] mb-2">If we need to cancel</h3>
+            <p>We will always give you as much notice as possible. We will recommend another dog walker who may be able to help on that day. We take our commitment to you and your dog very seriously.</p>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
 
   <!-- CTA -->
-  <section class="py-20" style="background-color:#1B2B23">
+  <section class="py-20 bg-[var(--color-brand-accent)]">
     <div class="max-w-2xl mx-auto px-4 text-center">
-      <div class="text-5xl mb-4">🌙</div>
       <h2 class="text-4xl text-white mb-4">Ready to get started?</h2>
-      <p class="text-white/70 mb-8 leading-relaxed">Contact us today to discuss your dog's needs and book their first walk.</p>
+      <p class="text-blue-200 mb-8">Contact Art today to discuss your dog's needs and book your first walk.</p>
       <div class="flex flex-wrap gap-3 justify-center">
-        <a href="/P3473/contact" class="bg-mustard text-white px-8 py-3 rounded-full font-bold hover:opacity-90 transition-opacity">Book a Walk</a>
-        <a href="tel:07792663847" class="bg-white/10 text-white px-8 py-3 rounded-full font-bold hover:bg-white/20 transition-colors">07792 663847</a>
+        <a href="/P3473/contact" class="bg-white text-[var(--color-brand-accent)] px-8 py-3 rounded-full font-bold hover:bg-blue-50 transition-colors">Get in Touch</a>
+        <a href="tel:07792663847" class="bg-white/15 text-white border border-white/30 px-8 py-3 rounded-full font-bold hover:bg-white/25 transition-colors">07792 663847</a>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-[#0F1A12] text-white/60 py-12">
+  <footer class="bg-[var(--color-ink)] text-white/60 py-12">
     <div class="max-w-6xl mx-auto px-4">
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mb-10">
         <div>
-          <div class="font-display font-extrabold text-white text-lg mb-2">Howl at the Moon</div>
-          <div class="text-mustard text-sm mb-3">Dog Walks</div>
-          <p class="text-sm leading-relaxed">Friendly and reliable canine services in Cranleigh &amp; Ewhurst, Surrey.</p>
+          <div class="flex items-center gap-2 mb-3">
+            <img src="/P3473/images/logo-20final-201k.png" alt="Howl at the Moon logo" width="36" height="36" class="rounded-full" />
+            <div class="font-display font-extrabold text-white text-base">Howl at the Moon</div>
+          </div>
+          <p class="text-sm leading-relaxed">Family-run dog walking in Cranleigh, Ewhurst and Bramley, Surrey. Art and Mandy.</p>
         </div>
         <div>
           <div class="font-semibold text-white text-sm mb-3 uppercase tracking-wide">Pages</div>
           <ul class="flex flex-col gap-2 text-sm">
-            <li><a href="/P3473" class="hover:text-mustard transition-colors">Home</a></li>
-            <li><a href="/P3473/services" class="hover:text-mustard transition-colors">Services</a></li>
-            <li><a href="/P3473/gallery" class="hover:text-mustard transition-colors">Gallery</a></li>
-            <li><a href="/P3473/contact" class="hover:text-mustard transition-colors">Contact</a></li>
+            <li><a href="/P3473" class="hover:text-white transition-colors">Home</a></li>
+            <li><a href="/P3473/services" class="hover:text-white transition-colors">Services &amp; Prices</a></li>
+            <li><a href="/P3473/testimonials" class="hover:text-white transition-colors">Testimonials</a></li>
+            <li><a href="/P3473/contact" class="hover:text-white transition-colors">Contact Us</a></li>
           </ul>
         </div>
         <div>
           <div class="font-semibold text-white text-sm mb-3 uppercase tracking-wide">Services</div>
           <ul class="flex flex-col gap-2 text-sm">
-            <li><a href="/P3473/services" class="hover:text-mustard transition-colors">Group Walks</a></li>
-            <li><a href="/P3473/services" class="hover:text-mustard transition-colors">Puppy Walks</a></li>
-            <li><a href="/P3473/services" class="hover:text-mustard transition-colors">Flexible Canine Services</a></li>
+            <li><a href="/P3473/services" class="hover:text-white transition-colors">Dog Walks &mdash; £15/dog</a></li>
+            <li><a href="/P3473/services" class="hover:text-white transition-colors">Hikes &mdash; £30/dog</a></li>
+            <li><a href="/P3473/services" class="hover:text-white transition-colors">Puppy Visits &mdash; £8/20min</a></li>
+            <li><a href="/P3473/services" class="hover:text-white transition-colors">House Sitting &mdash; from £40/night</a></li>
           </ul>
         </div>
         <div>
           <div class="font-semibold text-white text-sm mb-3 uppercase tracking-wide">Contact</div>
           <ul class="flex flex-col gap-2 text-sm">
-            <li><a href="tel:07792663847" class="hover:text-mustard transition-colors">07792 663847</a></li>
-            <li><a href="mailto:art@howlatthemoondogwalking.co.uk" class="hover:text-mustard transition-colors break-all">art@howlatthemoondogwalking.co.uk</a></li>
-            <li class="text-white/50">Cranleigh, Surrey, GU6 8AA</li>
+            <li><a href="tel:07792663847" class="hover:text-white transition-colors">07792 663847</a></li>
+            <li><a href="mailto:art@howlatthemoondogwalking.co.uk" class="hover:text-white transition-colors break-all">art@howlatthemoondogwalking.co.uk</a></li>
+            <li class="text-white/40">10 Rectory Close, Ewhurst</li>
+            <li class="text-white/40">Surrey GU6 7PU</li>
           </ul>
         </div>
       </div>
       <div class="border-t border-white/10 pt-6 text-center text-xs text-white/40">
-        &copy; 2026 Howl at the Moon Dog Walks, Cranleigh, Surrey, GU6 8AA. All rights reserved.
+        &copy; 2026 Howl at the Moon Dog Walking. 10 Rectory Close, Ewhurst, Surrey GU6 7PU. All rights reserved.
       </div>
     </div>
   </footer>
