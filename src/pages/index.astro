@@ -6,8 +6,8 @@ import '../styles/site.css';
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Howl at the Moon Dog Walks | Cranleigh, Surrey</title>
-  <meta name="description" content="Professional dog walking in Cranleigh and Ewhurst, Surrey. Flexible, friendly and reliable canine services. Call 07792 663847." />
+  <title>Howl at the Moon Dog Walks | Cranleigh &amp; Ewhurst, Surrey</title>
+  <meta name="description" content="Friendly and reliable dog walking in Cranleigh and Ewhurst, Surrey. Group walks, puppy walks and flexible canine services. Call 07792 663847." />
   
 </head>
 <body>
@@ -16,342 +16,275 @@ import '../styles/site.css';
   <div style="background:white;color:#374151;padding:8px 16px;text-align:center;font-size:13px;position:sticky;top:0;z-index:50;border-bottom:1px solid #E5E7EB;box-shadow:0 1px 3px rgba(0,0,0,0.05)"><div style="max-width:56rem;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap"><span>Preview redesign for <strong style="color:#111827">Howl at the moon - Dog Walks</strong></span><a href="https://biscuitweb.co.uk/activate?id=P3473&amp;name=Howl%20at%20the%20moon%20-%20Dog%20Walks" style="display:inline-flex;align-items:center;padding:4px 14px;background:#111827;color:white;font-weight:700;font-size:11px;border-radius:9999px;text-decoration:none">Like it? Just £20/month</a></div></div>
 
   <!-- Header -->
-  <header class="sticky top-[41px] z-40 bg-white border-b border-border shadow-sm">
+  <header class="sticky top-[41px] z-40 bg-[#1B2B23] shadow-md">
     <div class="max-w-6xl mx-auto px-4 flex items-center justify-between h-16">
-      <a href="/P3473" class="font-display font-extrabold text-xl text-ink leading-tight">
-        Howl at the Moon<br class="hidden sm:block" /><span class="text-mustard text-base font-bold"> Dog Walks</span>
+      <a href="/P3473" class="font-display font-extrabold text-lg text-white leading-tight">
+        Howl at the Moon<br /><span class="text-mustard text-sm font-normal font-body">Dog Walks</span>
       </a>
       <!-- Desktop Nav -->
-      <nav class="hidden md:flex items-center gap-7">
-        <a href="/P3473" class="text-mustard font-bold text-sm">Home</a>
-        <a href="/P3473/services" class="text-ink hover:text-mustard font-semibold text-sm transition-colors">Services</a>
-        <a href="/P3473/gallery" class="text-ink hover:text-mustard font-semibold text-sm transition-colors">Gallery</a>
-        <a href="/P3473/contact" class="text-ink hover:text-mustard font-semibold text-sm transition-colors">Contact</a>
-        <a href="/P3473/contact" class="bg-mustard text-white text-sm font-bold px-5 py-2 rounded-full hover:bg-mustard-deep transition-colors">Book a Walk</a>
+      <nav class="hidden md:flex items-center gap-6">
+        <a href="/P3473" class="text-mustard font-semibold text-sm">Home</a>
+        <a href="/P3473/services" class="text-white/80 hover:text-mustard font-semibold text-sm transition-colors">Services</a>
+        <a href="/P3473/gallery" class="text-white/80 hover:text-mustard font-semibold text-sm transition-colors">Gallery</a>
+        <a href="/P3473/contact" class="text-white/80 hover:text-mustard font-semibold text-sm transition-colors">Contact</a>
+        <a href="/P3473/contact" class="bg-mustard text-white text-sm font-bold px-5 py-2 rounded-full hover:opacity-90 transition-opacity">Book a Walk</a>
       </nav>
-      <!-- Mobile Hamburger -->
-      <button id="menu-btn" class="md:hidden flex flex-col gap-1.5 p-2" aria-label="Open menu" aria-expanded="false">
-        <span class="block w-6 h-0.5 bg-ink transition-all"></span>
-        <span class="block w-6 h-0.5 bg-ink transition-all"></span>
-        <span class="block w-6 h-0.5 bg-ink transition-all"></span>
+      <!-- Hamburger -->
+      <button id="menu-toggle" class="md:hidden text-white p-2" aria-label="Open menu">
+        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 12h18M3 6h18M3 18h18" stroke-linecap="round"/></svg>
       </button>
     </div>
     <!-- Mobile Menu -->
-    <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-border px-4 py-4 flex flex-col gap-4">
-      <a href="/P3473" class="text-mustard font-bold text-base">Home</a>
-      <a href="/P3473/services" class="text-ink font-semibold text-base">Services</a>
-      <a href="/P3473/gallery" class="text-ink font-semibold text-base">Gallery</a>
-      <a href="/P3473/contact" class="text-ink font-semibold text-base">Contact</a>
-      <a href="/P3473/contact" class="bg-mustard text-white text-sm font-bold px-5 py-2.5 rounded-full text-center">Book a Walk</a>
+    <div id="mobile-menu" class="hidden md:hidden bg-[#1B2B23] border-t border-white/10">
+      <nav class="flex flex-col px-4 py-3">
+        <a href="/P3473" class="text-mustard font-semibold py-3 border-b border-white/10">Home</a>
+        <a href="/P3473/services" class="text-white/80 py-3 border-b border-white/10">Services</a>
+        <a href="/P3473/gallery" class="text-white/80 py-3 border-b border-white/10">Gallery</a>
+        <a href="/P3473/contact" class="text-white/80 py-3 border-b border-white/10">Contact</a>
+        <a href="/P3473/contact" class="text-mustard font-bold py-3">Book a Walk</a>
+      </nav>
     </div>
   </header>
 
-  <script>
-    const btn = document.getElementById('menu-btn');
-    const menu = document.getElementById('mobile-menu');
-    btn?.addEventListener('click', () => {
-      const open = !menu?.classList.contains('hidden');
-      menu?.classList.toggle('hidden', open);
-      btn.setAttribute('aria-expanded', String(!open));
-    });
-  </script>
-
-  <!-- Hero: solid brand colour, no image -->
-  <section class="relative min-h-[90vh] flex items-center" style="background: linear-gradient(135deg, #2A2E35 0%, #1a1e25 60%, #3a4020 100%);">
-    <div class="relative max-w-6xl mx-auto px-4 py-20 lg:py-32">
-      <div class="max-w-2xl">
-        <div class="inline-flex items-center gap-2 bg-mustard/20 text-mustard px-4 py-1.5 rounded-full text-sm font-semibold mb-6">
-          📍 Cranleigh &amp; Ewhurst, Surrey
-        </div>
-        <h1 class="text-5xl text-white mb-6">
-          Professional Dog Walking in <span class="text-mustard">Cranleigh</span>
-        </h1>
-        <p class="text-lg text-white/80 mb-4 leading-relaxed">
-          We are a flexible canine services business based in Cranleigh, covering Cranleigh and Ewhurst. We provide a friendly and reliable service for all of your dog's needs.
-        </p>
-        <p class="text-white/70 mb-8">
-          From puppy walks to group adventures in the Surrey countryside, we treat every dog like our own.
-        </p>
-        <div class="flex flex-col sm:flex-row gap-4">
-          <a href="/P3473/contact" class="bg-mustard hover:bg-mustard-deep text-white font-bold px-8 py-4 rounded-full text-center transition-colors">
-            Book a Walk Today
-          </a>
-          <a href="/P3473/services" class="border-2 border-white/40 hover:border-white text-white font-semibold px-8 py-4 rounded-full text-center transition-colors">
-            Our Services
-          </a>
-        </div>
+  <!-- Hero -->
+  <section class="relative flex items-center overflow-hidden" style="background-color:#1B2B23;min-height:82vh">
+    <!-- Decorative glow -->
+    <div class="absolute top-0 right-0 w-80 h-80 md:w-[500px] md:h-[500px] rounded-full pointer-events-none" style="background:radial-gradient(circle,rgba(212,154,42,0.18),transparent 70%);transform:translate(20%,-20%)"></div>
+    <div class="absolute bottom-0 left-0 w-64 h-64 rounded-full pointer-events-none" style="background:radial-gradient(circle,rgba(212,154,42,0.08),transparent 70%);transform:translate(-30%,30%)"></div>
+    <div class="max-w-6xl mx-auto px-4 py-20 relative z-10 w-full">
+      <span class="inline-flex items-center gap-2 bg-white/10 text-white/80 px-3 py-1 rounded-full text-sm mb-6">📍 Cranleigh &amp; Ewhurst, Surrey</span>
+      <h1 class="text-5xl text-white mb-5 max-w-2xl">
+        Dog walks your<br /><span class="text-mustard">four-legged friend</span><br />will love
+      </h1>
+      <p class="text-white/75 text-lg max-w-xl mb-8 leading-relaxed">
+        A flexible canine services business based in Cranleigh, providing friendly and reliable walks across Cranleigh and Ewhurst. We care for every dog like our own.
+      </p>
+      <div class="flex flex-wrap gap-3">
+        <a href="/P3473/contact" class="bg-mustard text-white px-7 py-3 rounded-full font-bold hover:opacity-90 transition-opacity">Book a Walk</a>
+        <a href="/P3473/services" class="bg-white/10 text-white px-7 py-3 rounded-full font-semibold hover:bg-white/20 transition-colors">Our Services</a>
       </div>
     </div>
   </section>
 
   <!-- Trust Strip -->
-  <section class="bg-mustard py-5">
+  <section class="bg-[#152017] py-5">
     <div class="max-w-6xl mx-auto px-4">
-      <div class="flex flex-wrap justify-center gap-x-10 gap-y-3 text-white text-sm font-semibold">
-        <span class="flex items-center gap-2">🐾 Based in Cranleigh, Surrey</span>
-        <span class="flex items-center gap-2">✅ 100% Recommend (14 Reviews)</span>
-        <span class="flex items-center gap-2">🌿 Serving Cranleigh &amp; Ewhurst</span>
-        <span class="flex items-center gap-2">❤️ 978+ Followers on Facebook</span>
+      <div class="flex flex-wrap justify-center gap-8 text-center">
+        <div class="flex items-center gap-2 text-white/70 text-sm">
+          <span class="text-mustard text-xl">★</span>
+          <span>100% recommend &mdash; 14 reviews</span>
+        </div>
+        <div class="flex items-center gap-2 text-white/70 text-sm">
+          <span class="text-mustard">🐾</span>
+          <span>978 Facebook followers</span>
+        </div>
+        <div class="flex items-center gap-2 text-white/70 text-sm">
+          <span class="text-mustard">📍</span>
+          <span>Cranleigh &amp; Ewhurst covered</span>
+        </div>
+        <div class="flex items-center gap-2 text-white/70 text-sm">
+          <span class="text-mustard">🐶</span>
+          <span>Flexible &amp; reliable service</span>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Services Overview -->
-  <section class="py-20 bg-cream">
+  <section class="py-20 bg-brand-bg">
     <div class="max-w-6xl mx-auto px-4">
-      <div class="text-center mb-14">
-        <span class="text-mustard font-bold text-sm uppercase tracking-widest">What We Offer</span>
-        <h2 class="text-4xl text-ink mt-2">Our Dog Walking Services</h2>
-        <p class="text-ink-soft mt-4 max-w-xl mx-auto">We offer a range of flexible services tailored to your dog's age, temperament and routine.</p>
+      <div class="text-center mb-12">
+        <h2 class="text-4xl text-ink mb-3">What We Offer</h2>
+        <p class="text-ink-soft max-w-xl mx-auto">From group adventures to gentle puppy introductions, we tailor our service to your dog's needs.</p>
       </div>
-      <div class="grid md:grid-cols-3 gap-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         <!-- Group Walks -->
-        <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-shadow">
-          <div class="aspect-square overflow-hidden">
-            <img
-              src="/P3473/images/680302059-1546975714102645-1545243961547.jpg"
-              alt="Group dog walk in the Surrey countryside"
-              width="600" height="600"
-              class="w-full object-cover"
-              loading="lazy"
-            />
+        <div class="bg-white rounded-2xl overflow-hidden shadow-md group">
+          <div class="aspect-[4/3] overflow-hidden">
+            <img src="/P3473/images/680302059-1546975714102645-1545243961547.jpg" alt="Group dog walk in the Surrey countryside" width="800" height="600" loading="lazy" class="w-full object-cover group-hover:scale-105 transition-transform duration-500" />
           </div>
           <div class="p-6">
-            <div class="w-10 h-10 bg-mustard/10 rounded-full flex items-center justify-center mb-3">
-              <span class="text-xl">🐕</span>
-            </div>
+            <div class="text-mustard text-2xl mb-2">🐕</div>
             <h3 class="text-xl text-ink mb-2">Group Walks</h3>
-            <p class="text-ink-soft text-sm leading-relaxed">Our popular group walks let dogs enjoy socialising with other well-behaved dogs while exploring the beautiful Surrey countryside around Cranleigh and Ewhurst.</p>
-            <a href="/P3473/services" class="inline-block mt-4 text-mustard font-semibold text-sm hover:underline">Learn more →</a>
-          </div>
-        </div>
-        <!-- Solo Walks -->
-        <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-shadow">
-          <div class="aspect-square overflow-hidden">
-            <img
-              src="/P3473/images/678388916-1546939907439559-5457193615797.jpg"
-              alt="Solo dog walk in Cranleigh"
-              width="600" height="600"
-              class="w-full object-cover"
-              loading="lazy"
-            />
-          </div>
-          <div class="p-6">
-            <div class="w-10 h-10 bg-mustard/10 rounded-full flex items-center justify-center mb-3">
-              <span class="text-xl">🦮</span>
-            </div>
-            <h3 class="text-xl text-ink mb-2">Solo Walks</h3>
-            <p class="text-ink-soft text-sm leading-relaxed">For dogs who prefer one-to-one time or have specific needs, our solo walks offer personalised attention and a walk tailored entirely to your dog.</p>
-            <a href="/P3473/services" class="inline-block mt-4 text-mustard font-semibold text-sm hover:underline">Learn more →</a>
+            <p class="text-ink-soft text-sm leading-relaxed">Sociable group walks through the beautiful countryside around Cranleigh and Ewhurst. Perfect for dogs who love making new friends.</p>
+            <a href="/P3473/services" class="mt-4 inline-block text-mustard font-semibold text-sm hover:underline">Learn more &rarr;</a>
           </div>
         </div>
         <!-- Puppy Walks -->
-        <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-shadow">
-          <div class="aspect-square overflow-hidden">
-            <img
-              src="/P3473/images/679056316-1546939817439568-2874806062940.jpg"
-              alt="Puppy walk service in Cranleigh"
-              width="600" height="600"
-              class="w-full object-cover"
-              loading="lazy"
-            />
+        <div class="bg-white rounded-2xl overflow-hidden shadow-md group">
+          <div class="aspect-[4/3] overflow-hidden">
+            <img src="/P3473/images/684569372-1551796400287243-3124562392047.jpg" alt="Puppy walk service" width="800" height="600" loading="lazy" class="w-full object-cover group-hover:scale-105 transition-transform duration-500" />
           </div>
           <div class="p-6">
-            <div class="w-10 h-10 bg-mustard/10 rounded-full flex items-center justify-center mb-3">
-              <span class="text-xl">🐶</span>
-            </div>
+            <div class="text-mustard text-2xl mb-2">🐾</div>
             <h3 class="text-xl text-ink mb-2">Puppy Walks</h3>
-            <p class="text-ink-soft text-sm leading-relaxed">Short, gentle walks designed for puppies building their confidence and fitness. We help your young dog develop into a well-socialised, happy companion.</p>
-            <a href="/P3473/services" class="inline-block mt-4 text-mustard font-semibold text-sm hover:underline">Learn more →</a>
+            <p class="text-ink-soft text-sm leading-relaxed">Shorter, gentle walks designed for younger dogs just starting out. We help puppies build confidence and socialise at their own pace.</p>
+            <a href="/P3473/services" class="mt-4 inline-block text-mustard font-semibold text-sm hover:underline">Learn more &rarr;</a>
+          </div>
+        </div>
+        <!-- Flexible Canine Services -->
+        <div class="bg-white rounded-2xl overflow-hidden shadow-md group">
+          <div class="aspect-[4/3] overflow-hidden">
+            <img src="/P3473/images/677802236-1545221057611444-8321389836124.jpg" alt="Flexible canine services" width="800" height="600" loading="lazy" class="w-full object-cover group-hover:scale-105 transition-transform duration-500" />
+          </div>
+          <div class="p-6">
+            <div class="text-mustard text-2xl mb-2">🌿</div>
+            <h3 class="text-xl text-ink mb-2">Flexible Services</h3>
+            <p class="text-ink-soft text-sm leading-relaxed">We offer a flexible service to suit your schedule and your dog's needs. Get in touch to discuss what works best for you and your pup.</p>
+            <a href="/P3473/services" class="mt-4 inline-block text-mustard font-semibold text-sm hover:underline">Learn more &rarr;</a>
           </div>
         </div>
       </div>
       <div class="text-center mt-10">
-        <a href="/P3473/services" class="inline-block bg-mustard text-white font-bold px-8 py-3.5 rounded-full hover:bg-mustard-deep transition-colors">
-          View All Services
-        </a>
+        <a href="/P3473/services" class="inline-block border-2 border-mustard text-mustard px-7 py-3 rounded-full font-bold hover:bg-mustard hover:text-white transition-colors">View All Services</a>
       </div>
     </div>
   </section>
 
-  <!-- About Section -->
+  <!-- About -->
   <section class="py-20 bg-white">
     <div class="max-w-6xl mx-auto px-4">
-      <div class="grid lg:grid-cols-2 gap-14 items-center">
-        <div class="grid grid-cols-2 gap-4">
-          <img
-            src="/P3473/images/677802236-1545221057611444-8321389836124.jpg"
-            alt="Dogs enjoying a walk in Cranleigh"
-            width="400" height="400"
-            class="w-full aspect-square object-cover rounded-2xl"
-            loading="lazy"
-          />
-          <img
-            src="/P3473/images/657824191-1520644373402446-2994353260382.jpg"
-            alt="Happy dogs on a walk in Surrey"
-            width="400" height="400"
-            class="w-full aspect-square object-cover rounded-2xl mt-8"
-            loading="lazy"
-          />
-          <img
-            src="/P3473/images/656940912-1520644356735781-1052415218649.jpg"
-            alt="Dog walk in the Surrey countryside"
-            width="400" height="400"
-            class="w-full aspect-square object-cover rounded-2xl"
-            loading="lazy"
-          />
-          <img
-            src="/P3473/images/656911409-1520644393402444-5422705633820.jpg"
-            alt="Dogs exploring on a group walk"
-            width="400" height="400"
-            class="w-full aspect-square object-cover rounded-2xl mt-8"
-            loading="lazy"
-          />
-        </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <div>
-          <span class="text-mustard font-bold text-sm uppercase tracking-widest">About Us</span>
-          <h2 class="text-4xl text-ink mt-2 mb-6">Flexible, Friendly &amp; Reliable</h2>
+          <h2 class="text-4xl text-ink mb-5">About Us</h2>
           <p class="text-ink-soft leading-relaxed mb-4">
-            Howl at the Moon Dog Walks is a flexible canine services business based in Cranleigh, offering services across Cranleigh and Ewhurst. We provide a friendly and reliable service for all of your dog's needs.
+            Howl at the Moon Dog Walks is a flexible canine services business based in Cranleigh, offering services in Cranleigh and Ewhurst. We provide a friendly and reliable service for all of your dog's needs.
           </p>
-          <p class="text-ink-soft leading-relaxed mb-4">
-            We know that every dog is different. Whether your pup is bounding with energy or needs a gentler approach, we tailor our walks to suit them perfectly. From short puppy walks to long countryside adventures, we progress at your dog's pace.
+          <p class="text-ink-soft leading-relaxed mb-6">
+            We love every dog we walk as if they were our own. Whether your pup is just starting out on short puppy walks or is ready to join our group adventures, we work with you to find the right routine.
           </p>
-          <p class="text-ink-soft leading-relaxed mb-8">
-            We absolutely adore every dog in our care and treat them like our own. You can trust us to keep them safe, happy and thoroughly exercised.
-          </p>
-          <div class="grid grid-cols-2 gap-4 mb-8">
-            <div class="bg-cream rounded-xl p-4 text-center">
-              <div class="text-3xl font-display font-extrabold text-mustard">100%</div>
-              <div class="text-ink-soft text-sm mt-1">Recommend Rate</div>
+          <div class="flex flex-col gap-3">
+            <div class="flex items-start gap-3">
+              <span class="text-mustard mt-0.5">✓</span>
+              <span class="text-ink-soft">Friendly, reliable and consistent walkers</span>
             </div>
-            <div class="bg-cream rounded-xl p-4 text-center">
-              <div class="text-3xl font-display font-extrabold text-mustard">978+</div>
-              <div class="text-ink-soft text-sm mt-1">Facebook Followers</div>
+            <div class="flex items-start gap-3">
+              <span class="text-mustard mt-0.5">✓</span>
+              <span class="text-ink-soft">Covering Cranleigh and Ewhurst, Surrey</span>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="text-mustard mt-0.5">✓</span>
+              <span class="text-ink-soft">Flexible scheduling to suit your needs</span>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="text-mustard mt-0.5">✓</span>
+              <span class="text-ink-soft">100% recommend on Facebook (14 reviews)</span>
             </div>
           </div>
-          <a href="/P3473/contact" class="inline-block bg-mustard text-white font-bold px-8 py-3.5 rounded-full hover:bg-mustard-deep transition-colors">
-            Get in Touch
-          </a>
+          <a href="/P3473/contact" class="mt-8 inline-block bg-mustard text-white px-7 py-3 rounded-full font-bold hover:opacity-90 transition-opacity">Get in Touch</a>
+        </div>
+        <div class="grid grid-cols-2 gap-3">
+          <div class="aspect-square overflow-hidden rounded-xl">
+            <img src="/P3473/images/271049220-1582164595452229-3050250284765.jpg" alt="Howl at the Moon Dog Walks" width="400" height="400" loading="lazy" class="w-full h-full object-cover" />
+          </div>
+          <div class="aspect-square overflow-hidden rounded-xl">
+            <img src="/P3473/images/678388916-1546939907439559-5457193615797.jpg" alt="Dog on a walk" width="400" height="400" loading="lazy" class="w-full h-full object-cover" />
+          </div>
+          <div class="aspect-square overflow-hidden rounded-xl">
+            <img src="/P3473/images/679056316-1546939817439568-2874806062940.jpg" alt="Dog enjoying a walk" width="400" height="400" loading="lazy" class="w-full h-full object-cover" />
+          </div>
+          <div class="aspect-square overflow-hidden rounded-xl">
+            <img src="/P3473/images/656911409-1520644393402444-5422705633820.jpg" alt="Dog walk in Surrey" width="400" height="400" loading="lazy" class="w-full h-full object-cover" />
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- How It Works -->
-  <section class="py-20 bg-cream">
+  <!-- Photo Grid Teaser -->
+  <section class="py-20 bg-brand-bg">
     <div class="max-w-6xl mx-auto px-4">
-      <div class="text-center mb-14">
-        <span class="text-mustard font-bold text-sm uppercase tracking-widest">The Process</span>
-        <h2 class="text-4xl text-ink mt-2">How It Works</h2>
-        <p class="text-ink-soft mt-4 max-w-xl mx-auto">Getting started with us is simple. We make it easy for you and stress-free for your dog.</p>
+      <div class="text-center mb-10">
+        <h2 class="text-4xl text-ink mb-3">Our Happy Walkers</h2>
+        <p class="text-ink-soft">A glimpse of the dogs we walk every day across Cranleigh and Ewhurst.</p>
       </div>
-      <div class="grid md:grid-cols-4 gap-6">
-        <div class="text-center">
-          <div class="w-16 h-16 bg-mustard rounded-full flex items-center justify-center mx-auto mb-4 text-white text-2xl font-display font-extrabold">1</div>
-          <h3 class="text-lg text-ink mb-2">Get in Touch</h3>
-          <p class="text-ink-soft text-sm">Call or email us to discuss your dog's needs and your schedule.</p>
+      <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
+        <div class="aspect-square overflow-hidden rounded-xl">
+          <img src="/P3473/images/657336990-1522542779879272-5897377405768.jpg" alt="Dog walking in Surrey" width="400" height="400" loading="lazy" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
         </div>
-        <div class="text-center">
-          <div class="w-16 h-16 bg-mustard rounded-full flex items-center justify-center mx-auto mb-4 text-white text-2xl font-display font-extrabold">2</div>
-          <h3 class="text-lg text-ink mb-2">Meet &amp; Greet</h3>
-          <p class="text-ink-soft text-sm">We arrange a free initial meeting so your dog can get to know us.</p>
+        <div class="aspect-square overflow-hidden rounded-xl">
+          <img src="/P3473/images/657824191-1520644373402446-2994353260382.jpg" alt="Happy dog on a walk" width="400" height="400" loading="lazy" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
         </div>
-        <div class="text-center">
-          <div class="w-16 h-16 bg-mustard rounded-full flex items-center justify-center mx-auto mb-4 text-white text-2xl font-display font-extrabold">3</div>
-          <h3 class="text-lg text-ink mb-2">Tailored Plan</h3>
-          <p class="text-ink-soft text-sm">We put together a flexible walking schedule that works for you both.</p>
+        <div class="aspect-square overflow-hidden rounded-xl">
+          <img src="/P3473/images/470035575-2347749412227073-2266513525879-2.jpg" alt="Dog walk in the countryside" width="400" height="400" loading="lazy" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
         </div>
-        <div class="text-center">
-          <div class="w-16 h-16 bg-mustard rounded-full flex items-center justify-center mx-auto mb-4 text-white text-2xl font-display font-extrabold">4</div>
-          <h3 class="text-lg text-ink mb-2">Happy Walks!</h3>
-          <p class="text-ink-soft text-sm">Sit back while your dog enjoys fantastic walks in the Surrey countryside.</p>
+        <div class="aspect-square overflow-hidden rounded-xl">
+          <img src="/P3473/images/656940912-1520644356735781-1052415218649.jpg" alt="Dog enjoying the outdoors" width="400" height="400" loading="lazy" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Gallery Preview -->
-  <section class="py-20 bg-white">
-    <div class="max-w-6xl mx-auto px-4">
-      <div class="text-center mb-12">
-        <span class="text-mustard font-bold text-sm uppercase tracking-widest">Happy Dogs</span>
-        <h2 class="text-4xl text-ink mt-2">See Our Walks in Action</h2>
-      </div>
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-        <img src="/P3473/images/684569372-1551796400287243-3124562392047.jpg" alt="Dog on a walk near Cranleigh" width="400" height="400" class="w-full aspect-square object-cover rounded-xl" loading="lazy" />
-        <img src="/P3473/images/470035575-2347749412227073-2266513525879-2.jpg" alt="Dogs enjoying their walk" width="400" height="400" class="w-full aspect-square object-cover rounded-xl" loading="lazy" />
-        <img src="/P3473/images/657336990-1522542779879272-5897377405768.jpg" alt="Howl at the Moon dog walking" width="400" height="400" class="w-full aspect-square object-cover rounded-xl" loading="lazy" />
-        <img src="/P3473/images/271049220-1582164595452229-3050250284765.jpg" alt="Happy dog on a group walk" width="400" height="400" class="w-full aspect-square object-cover rounded-xl" loading="lazy" />
+        <div class="aspect-square overflow-hidden rounded-xl">
+          <img src="/P3473/images/680302059-1546975714102645-1545243961547-2.jpg" alt="Dog walk Cranleigh" width="400" height="400" loading="lazy" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+        </div>
+        <div class="aspect-square overflow-hidden rounded-xl">
+          <img src="/P3473/images/684569372-1551796400287243-3124562392047-2.jpg" alt="Dogs on a group walk" width="400" height="400" loading="lazy" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+        </div>
       </div>
       <div class="text-center mt-8">
-        <a href="/P3473/gallery" class="inline-block border-2 border-mustard text-mustard font-bold px-8 py-3.5 rounded-full hover:bg-mustard hover:text-white transition-colors">
-          View Full Gallery
-        </a>
+        <a href="/P3473/gallery" class="inline-block border-2 border-mustard text-mustard px-7 py-3 rounded-full font-bold hover:bg-mustard hover:text-white transition-colors">See All Photos</a>
       </div>
     </div>
   </section>
 
-  <!-- CTA Section -->
-  <section class="py-20" style="background: linear-gradient(135deg, #2A2E35 0%, #1a1e25 100%);">
-    <div class="max-w-3xl mx-auto px-4 text-center">
-      <span class="text-mustard font-bold text-sm uppercase tracking-widest">Ready to Get Started?</span>
-      <h2 class="text-4xl text-white mt-3 mb-5">Give Your Dog the Walks They Deserve</h2>
-      <p class="text-white/70 mb-8 text-lg">Based in Cranleigh and serving the wider Cranleigh and Ewhurst area. Get in touch today and let's find the perfect walking plan for your dog.</p>
-      <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <a href="tel:07792663847" class="bg-mustard hover:bg-mustard-deep text-white font-bold px-8 py-4 rounded-full transition-colors">
-          Call 07792 663847
-        </a>
-        <a href="/P3473/contact" class="border-2 border-white/40 hover:border-white text-white font-semibold px-8 py-4 rounded-full transition-colors">
-          Send a Message
-        </a>
+  <!-- CTA -->
+  <section class="py-20" style="background-color:#1B2B23">
+    <div class="max-w-2xl mx-auto px-4 text-center">
+      <div class="text-5xl mb-4">🌙</div>
+      <h2 class="text-4xl text-white mb-4">Ready to book a walk?</h2>
+      <p class="text-white/70 mb-8 leading-relaxed">Get in touch today to discuss your dog's needs. We serve Cranleigh and Ewhurst, Surrey.</p>
+      <div class="flex flex-wrap gap-3 justify-center">
+        <a href="/P3473/contact" class="bg-mustard text-white px-8 py-3 rounded-full font-bold hover:opacity-90 transition-opacity">Book Now</a>
+        <a href="tel:07792663847" class="bg-white/10 text-white px-8 py-3 rounded-full font-bold hover:bg-white/20 transition-colors">07792 663847</a>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-ink text-white py-14">
+  <footer class="bg-[#0F1A12] text-white/60 py-12">
     <div class="max-w-6xl mx-auto px-4">
-      <div class="grid md:grid-cols-3 gap-10 mb-10">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mb-10">
         <div>
-          <div class="font-display font-extrabold text-xl mb-2">Howl at the Moon<br /><span class="text-mustard text-base">Dog Walks</span></div>
-          <p class="text-white/60 text-sm leading-relaxed mt-3">Flexible, friendly and reliable canine services in Cranleigh and Ewhurst, Surrey.</p>
+          <div class="font-display font-extrabold text-white text-lg mb-2">Howl at the Moon</div>
+          <div class="text-mustard text-sm mb-3">Dog Walks</div>
+          <p class="text-sm leading-relaxed">Friendly and reliable canine services in Cranleigh &amp; Ewhurst, Surrey.</p>
         </div>
         <div>
-          <h4 class="font-bold text-sm uppercase tracking-widest text-white/50 mb-4">Pages</h4>
-          <ul class="space-y-2 text-sm">
-            <li><a href="/P3473" class="text-white/70 hover:text-mustard transition-colors">Home</a></li>
-            <li><a href="/P3473/services" class="text-white/70 hover:text-mustard transition-colors">Services</a></li>
-            <li><a href="/P3473/gallery" class="text-white/70 hover:text-mustard transition-colors">Gallery</a></li>
-            <li><a href="/P3473/contact" class="text-white/70 hover:text-mustard transition-colors">Contact</a></li>
+          <div class="font-semibold text-white text-sm mb-3 uppercase tracking-wide">Pages</div>
+          <ul class="flex flex-col gap-2 text-sm">
+            <li><a href="/P3473" class="hover:text-mustard transition-colors">Home</a></li>
+            <li><a href="/P3473/services" class="hover:text-mustard transition-colors">Services</a></li>
+            <li><a href="/P3473/gallery" class="hover:text-mustard transition-colors">Gallery</a></li>
+            <li><a href="/P3473/contact" class="hover:text-mustard transition-colors">Contact</a></li>
           </ul>
         </div>
         <div>
-          <h4 class="font-bold text-sm uppercase tracking-widest text-white/50 mb-4">Contact Us</h4>
-          <ul class="space-y-3 text-sm">
-            <li class="flex items-start gap-3 text-white/70">
-              <span class="mt-0.5">📍</span>
-              <span>Cranleigh, Surrey, GU6 8AA</span>
-            </li>
-            <li>
-              <a href="tel:07792663847" class="flex items-center gap-3 text-white/70 hover:text-mustard transition-colors">
-                <span>📞</span><span>07792 663847</span>
-              </a>
-            </li>
-            <li>
-              <a href="mailto:art@howlatthemoondogwalking.co.uk" class="flex items-center gap-3 text-white/70 hover:text-mustard transition-colors break-all">
-                <span>✉️</span><span>art@howlatthemoondogwalking.co.uk</span>
-              </a>
-            </li>
+          <div class="font-semibold text-white text-sm mb-3 uppercase tracking-wide">Services</div>
+          <ul class="flex flex-col gap-2 text-sm">
+            <li><a href="/P3473/services" class="hover:text-mustard transition-colors">Group Walks</a></li>
+            <li><a href="/P3473/services" class="hover:text-mustard transition-colors">Puppy Walks</a></li>
+            <li><a href="/P3473/services" class="hover:text-mustard transition-colors">Flexible Canine Services</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="font-semibold text-white text-sm mb-3 uppercase tracking-wide">Contact</div>
+          <ul class="flex flex-col gap-2 text-sm">
+            <li><a href="tel:07792663847" class="hover:text-mustard transition-colors">07792 663847</a></li>
+            <li><a href="mailto:art@howlatthemoondogwalking.co.uk" class="hover:text-mustard transition-colors break-all">art@howlatthemoondogwalking.co.uk</a></li>
+            <li class="text-white/50">Cranleigh, Surrey, GU6 8AA</li>
           </ul>
         </div>
       </div>
-      <div class="border-t border-white/10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-        <p class="text-white/40 text-xs">&copy; 2025 Howl at the Moon Dog Walks. All rights reserved.</p>
-        <p class="text-white/40 text-xs">Cranleigh &amp; Ewhurst, Surrey</p>
+      <div class="border-t border-white/10 pt-6 text-center text-xs text-white/40">
+        &copy; 2026 Howl at the Moon Dog Walks, Cranleigh, Surrey, GU6 8AA. All rights reserved.
       </div>
     </div>
   </footer>
+
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('mobile-menu');
+    toggle?.addEventListener('click', () => {
+      menu?.classList.toggle('hidden');
+    });
+  </script>
 
 </body>
 </html>
